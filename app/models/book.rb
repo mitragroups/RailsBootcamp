@@ -8,6 +8,6 @@ class Book < ApplicationRecord
   end
 
   def self.urutan_buku_sesuai_abjad
-    order(title: :asc).pluck(:title)
+    order(title: :asc).pluck(:title, :price)
   end
 end
